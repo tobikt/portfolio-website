@@ -1,0 +1,16 @@
+[
+  {
+    "id": "portfolio-website",
+    "title": "Portfolio Website",
+    "description": "Persönliche Portfolio-Website mit Angular, Tailwind CSS und strukturierter Projektsteuerung über GitHub Issues.",
+    "technologies": ["Angular", "TypeScript", "Tailwind CSS", "GitHub Projects"],
+    "category": "Web Application",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/tobikt/portfolio-website"
+      }
+    ],
+    "featured": true
+  }
+]

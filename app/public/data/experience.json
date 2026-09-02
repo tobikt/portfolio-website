@@ -1,0 +1,13 @@
+[
+  {
+    "company": "Portfolio Projekt",
+    "role": "Angular Developer",
+    "startDate": "2026-09",
+    "description": "Aufbau einer persönlichen Portfolio-Website mit sauberer Architektur, dokumentierten Entscheidungen und testgestützter Entwicklung.",
+    "achievements": [
+      "Angular-Projekt mit Tailwind CSS eingerichtet",
+      "Feature-orientierte Struktur und Datenservices aufgebaut",
+      "GitHub Issues, Milestones und Roadmap synchronisiert"
+    ]
+  }
+]

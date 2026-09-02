@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Angular",
+    "category": "Frontend",
+    "level": "Advanced",
+    "icon": "angular"
+  },
+  {
+    "name": "TypeScript",
+    "category": "Frontend",
+    "level": "Advanced",
+    "icon": "typescript"
+  },
+  {
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "icon": "tailwind"
+  },
+  {
+    "name": "Testing",
+    "category": "Engineering",
+    "level": "Intermediate",
+    "icon": "test"
+  },
+  {
+    "name": "GitHub Projects",
+    "category": "Arbeitsweise",
+    "level": "Intermediate",
+    "icon": "github"
+  }
+]
