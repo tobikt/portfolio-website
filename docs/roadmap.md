@@ -37,6 +37,14 @@ Diese Roadmap beschreibt die Phasen der Entwicklung. Die einzelnen Aufgaben sind
 - [x] [Dark Mode Integration [#12]](https://github.com/tobikt/portfolio-website/issues/12)
 - [x] **[EPIC] Phase 4: Design, UX & Polishing [#19]**(https://github.com/tobikt/portfolio-website/issues/19)
 
+## Phase 4.5: Pre-Deployment Hardening
+*Milestone: Phase 4.5: Pre-Deployment Hardening*
+
+- [x] [Quality-Gates und Formatierung [#23]](https://github.com/tobikt/portfolio-website/issues/23)
+- [x] [SEO- und Accessibility-Baseline [#24]](https://github.com/tobikt/portfolio-website/issues/24)
+- [x] [Entwicklerdokumentation aktualisieren [#25]](https://github.com/tobikt/portfolio-website/issues/25)
+- [x] **[EPIC] Phase 4.5: Pre-Deployment Hardening [#22]**(https://github.com/tobikt/portfolio-website/issues/22)
+
 ## Phase 5: Deployment & CI/CD
 *Milestone: Phase 5: Deployment*
 *Sprint: Sprint 5*

@@ -4,9 +4,7 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./features/portfolio-page/portfolio-page').then(
-        (module) => module.PortfolioPage,
-      ),
+      import('./features/portfolio-page/portfolio-page').then((module) => module.PortfolioPage),
     title: 'Portfolio',
   },
   {

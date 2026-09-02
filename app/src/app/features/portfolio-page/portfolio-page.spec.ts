@@ -26,32 +26,30 @@ describe('PortfolioPage', () => {
     );
 
     expect(element.querySelector('header')).toBeTruthy();
-    expect(sectionIds).toEqual([
-      'hero',
-      'about',
-      'skills',
-      'projects',
-      'experience',
-      'contact',
-    ]);
+    expect(sectionIds).toEqual(['hero', 'about', 'skills', 'projects', 'experience', 'contact']);
+    expect(element.querySelector('main#content')).toBeTruthy();
     expect(element.querySelector('footer')).toBeTruthy();
+  });
+
+  it('offers a skip link for keyboard users', () => {
+    const fixture = TestBed.createComponent(PortfolioPage);
+    fixture.detectChanges();
+    const element = fixture.nativeElement as HTMLElement;
+    const skipLink = element.querySelector('[data-testid="skip-link"]') as HTMLAnchorElement;
+
+    expect(skipLink).toBeTruthy();
+    expect(skipLink.getAttribute('href')).toBe('#content');
   });
 
   it('offers navigation links for every section', () => {
     const fixture = TestBed.createComponent(PortfolioPage);
     fixture.detectChanges();
     const element = fixture.nativeElement as HTMLElement;
-    const targets = Array.from(element.querySelectorAll('header nav a')).map(
-      (link) => link.getAttribute('href'),
+    const targets = Array.from(element.querySelectorAll('header nav a')).map((link) =>
+      link.getAttribute('href'),
     );
 
-    expect(targets).toEqual([
-      '#about',
-      '#skills',
-      '#projects',
-      '#experience',
-      '#contact',
-    ]);
+    expect(targets).toEqual(['#about', '#skills', '#projects', '#experience', '#contact']);
   });
 
   it('uses responsive containers and reveal animations for polished sections', () => {

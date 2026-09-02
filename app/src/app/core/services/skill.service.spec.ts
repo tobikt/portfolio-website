@@ -10,11 +10,7 @@ describe('SkillService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [
-        SkillService,
-        provideHttpClient(),
-        provideHttpClientTesting(),
-      ],
+      providers: [SkillService, provideHttpClient(), provideHttpClientTesting()],
     });
 
     service = TestBed.inject(SkillService);

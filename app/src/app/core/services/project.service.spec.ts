@@ -10,11 +10,7 @@ describe('ProjectService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [
-        ProjectService,
-        provideHttpClient(),
-        provideHttpClientTesting(),
-      ],
+      providers: [ProjectService, provideHttpClient(), provideHttpClientTesting()],
     });
 
     service = TestBed.inject(ProjectService);

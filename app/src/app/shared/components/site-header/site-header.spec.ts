@@ -20,14 +20,18 @@ describe('SiteHeader', () => {
   });
 
   it('renders a theme toggle with the current theme label', () => {
-    const button = fixture.nativeElement.querySelector('[data-testid="theme-toggle"]') as HTMLButtonElement;
+    const button = fixture.nativeElement.querySelector(
+      '[data-testid="theme-toggle"]',
+    ) as HTMLButtonElement;
 
     expect(button).toBeTruthy();
     expect(button.getAttribute('aria-label')).toBe('Zum hellen Modus wechseln');
   });
 
   it('toggles the theme from the header', () => {
-    const button = fixture.nativeElement.querySelector('[data-testid="theme-toggle"]') as HTMLButtonElement;
+    const button = fixture.nativeElement.querySelector(
+      '[data-testid="theme-toggle"]',
+    ) as HTMLButtonElement;
 
     button.click();
     fixture.detectChanges();
