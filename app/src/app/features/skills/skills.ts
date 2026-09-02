@@ -7,17 +7,27 @@ import { SkillService } from '../../core/services/skill.service';
   selector: 'app-skills',
   standalone: true,
   template: `
-    <section id="skills" class="px-5 py-24">
+    <section id="skills" class="px-4 py-16 sm:px-5 sm:py-24">
       <div class="mx-auto max-w-6xl">
-        <p class="font-mono text-xs uppercase tracking-[0.2em] text-[#7170ff]">02 · Skills</p>
-        <h2 class="mt-4 text-3xl font-medium tracking-[-0.03em] text-[#f7f8f8]">Werkzeuge für robuste Produkte.</h2>
-        <div class="mt-10 grid gap-4 md:grid-cols-3">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-accent)]">
+          02 · Skills
+        </p>
+        <h2
+          class="mt-4 text-2xl font-medium tracking-[-0.03em] text-[var(--color-text)] sm:text-3xl"
+        >
+          Werkzeuge für robuste Produkte.
+        </h2>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           @for (skill of skills$ | async; track skill.name) {
-            <article class="rounded-xl border border-white/[0.08] bg-white/[0.02] p-6">
-              <p class="font-mono text-xs uppercase tracking-[0.16em] text-[#62666d]">{{ skill.category }}</p>
-              <h3 class="mt-3 text-lg font-medium text-[#f7f8f8]">{{ skill.name }}</h3>
+            <article
+              class="reveal rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 transition hover:-translate-y-1 hover:bg-[var(--color-surface-hover)] sm:p-6"
+            >
+              <p class="font-mono text-xs uppercase tracking-[0.16em] text-[var(--color-subtle)]">
+                {{ skill.category }}
+              </p>
+              <h3 class="mt-3 text-lg font-medium text-[var(--color-text)]">{{ skill.name }}</h3>
               @if (skill.level) {
-                <p class="mt-3 leading-7 text-[#8a8f98]">{{ skill.level }}</p>
+                <p class="mt-3 leading-7 text-[var(--color-muted)]">{{ skill.level }}</p>
               }
             </article>
           }

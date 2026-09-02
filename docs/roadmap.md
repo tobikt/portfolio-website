@@ -32,16 +32,24 @@ Diese Roadmap beschreibt die Phasen der Entwicklung. Die einzelnen Aufgaben sind
 *Milestone: Phase 4: Design & UX*
 *Sprint: Sprint 4*
 
-- [ ] [Responsive Design (Mobile First) [#10]](https://github.com/tobikt/portfolio-website/issues/10)
-- [ ] [Animationen implementieren [#11]](https://github.com/tobikt/portfolio-website/issues/11)
-- [ ] [Dark Mode Integration [#12]](https://github.com/tobikt/portfolio-website/issues/12)
-- [ ] **[EPIC] Phase 4: Design, UX & Polishing [#19]**(https://github.com/tobikt/portfolio-website/issues/19)
+- [x] [Responsive Design (Mobile First) [#10]](https://github.com/tobikt/portfolio-website/issues/10)
+- [x] [Animationen implementieren [#11]](https://github.com/tobikt/portfolio-website/issues/11)
+- [x] [Dark Mode Integration [#12]](https://github.com/tobikt/portfolio-website/issues/12)
+- [x] **[EPIC] Phase 4: Design, UX & Polishing [#19]**(https://github.com/tobikt/portfolio-website/issues/19)
+
+## Phase 4.5: Pre-Deployment Hardening
+*Milestone: Phase 4.5: Pre-Deployment Hardening*
+
+- [x] [Quality-Gates und Formatierung [#23]](https://github.com/tobikt/portfolio-website/issues/23)
+- [x] [SEO- und Accessibility-Baseline [#24]](https://github.com/tobikt/portfolio-website/issues/24)
+- [x] [Entwicklerdokumentation aktualisieren [#25]](https://github.com/tobikt/portfolio-website/issues/25)
+- [x] **[EPIC] Phase 4.5: Pre-Deployment Hardening [#22]**(https://github.com/tobikt/portfolio-website/issues/22)
 
 ## Phase 5: Deployment & CI/CD
 *Milestone: Phase 5: Deployment*
 *Sprint: Sprint 5*
 
-- [ ] [Build-Prozess optimieren [#13]](https://github.com/tobikt/portfolio-website/issues/13)
-- [ ] [Hosting-Setup [#14]](https://github.com/tobikt/portfolio-website/issues/14)
-- [ ] [GitHub Actions für Deployment [#15]](https://github.com/tobikt/portfolio-website/issues/15)
-- [ ] **[EPIC] Phase 5: Deployment & CI/CD [#20]**(https://github.com/tobikt/portfolio-website/issues/20)
+- [x] [Build-Prozess optimieren [#13]](https://github.com/tobikt/portfolio-website/issues/13)
+- [x] [Hosting-Setup [#14]](https://github.com/tobikt/portfolio-website/issues/14)
+- [x] [GitHub Actions für Deployment [#15]](https://github.com/tobikt/portfolio-website/issues/15)
+- [x] **[EPIC] Phase 5: Deployment & CI/CD [#20]**(https://github.com/tobikt/portfolio-website/issues/20)

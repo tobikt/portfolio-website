@@ -2,10 +2,45 @@
 
 :root {
   color-scheme: dark;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-synthesis: none;
-  background: #08090a;
   scroll-behavior: smooth;
+  --color-bg: #08090a;
+  --color-panel: #0f1011;
+  --color-surface: rgba(255, 255, 255, 0.03);
+  --color-surface-hover: rgba(255, 255, 255, 0.06);
+  --color-text: #f7f8f8;
+  --color-body: #d0d6e0;
+  --color-muted: #8a8f98;
+  --color-subtle: #62666d;
+  --color-primary: #5e6ad2;
+  --color-primary-hover: #828fff;
+  --color-accent: #7170ff;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-bg: #f7f8f8;
+  --color-panel: #ffffff;
+  --color-surface: rgba(8, 9, 10, 0.04);
+  --color-surface-hover: rgba(8, 9, 10, 0.08);
+  --color-text: #08090a;
+  --color-body: #34343a;
+  --color-muted: #62666d;
+  --color-subtle: #8a8f98;
+  --color-primary: #5e6ad2;
+  --color-primary-hover: #4f58bd;
+  --color-accent: #4f58bd;
+  --color-border: rgba(8, 9, 10, 0.12);
+  --color-border-subtle: rgba(8, 9, 10, 0.08);
 }
 
 * {
@@ -13,20 +48,57 @@
 }
 
 html {
-  background: #08090a;
-  scroll-padding-top: 4rem;
+  background: var(--color-bg);
+  scroll-padding-top: 5rem;
 }
 
 body {
   min-width: 320px;
   margin: 0;
-  background: #08090a;
-  color: #d0d6e0;
-  font-feature-settings: "cv01", "ss03";
+  background: var(--color-bg);
+  color: var(--color-body);
+  font-feature-settings: 'cv01', 'ss03';
   text-rendering: optimizeLegibility;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
 }
 
 ::selection {
   background: rgba(113, 112, 255, 0.3);
-  color: #f7f8f8;
+  color: var(--color-text);
+}
+
+.reveal {
+  animation: fade-up 620ms ease both;
+}
+
+.reveal-delay-1 {
+  animation-delay: 90ms;
+}
+
+.reveal-delay-2 {
+  animation-delay: 180ms;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

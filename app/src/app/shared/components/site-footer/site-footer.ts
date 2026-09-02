@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-site-footer',
   standalone: true,
   template: `
-    <footer class="border-t border-white/5 px-5 py-8 text-center text-sm text-[#62666d]">
+    <footer
+      class="border-t border-[var(--color-border-subtle)] px-5 py-8 text-center text-sm text-[var(--color-subtle)]"
+    >
       <p>Entwickelt mit Angular und Tailwind CSS.</p>
     </footer>
   `,

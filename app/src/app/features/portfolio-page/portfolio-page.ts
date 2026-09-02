@@ -11,20 +11,20 @@ import { SiteHeader } from '../../shared/components/site-header/site-header';
 @Component({
   selector: 'app-portfolio-page',
   standalone: true,
-  imports: [
-    SiteHeader,
-    Hero,
-    About,
-    Skills,
-    Projects,
-    ExperienceSection,
-    Contact,
-    SiteFooter,
-  ],
+  imports: [SiteHeader, Hero, About, Skills, Projects, ExperienceSection, Contact, SiteFooter],
   template: `
-    <div class="min-h-screen bg-[#08090a] text-[#d0d6e0]">
+    <div
+      class="min-h-screen overflow-x-hidden bg-[var(--color-bg)] text-[var(--color-body)] transition-colors duration-200"
+    >
+      <a
+        data-testid="skip-link"
+        class="fixed left-4 top-4 z-[60] -translate-y-20 rounded-md bg-[var(--color-primary)] px-4 py-2 text-sm font-medium text-white transition focus:translate-y-0"
+        href="#content"
+      >
+        Zum Inhalt springen
+      </a>
       <app-site-header />
-      <main>
+      <main id="content">
         <app-hero />
         <app-about />
         <app-skills />

@@ -10,11 +10,7 @@ describe('ExperienceService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [
-        ExperienceService,
-        provideHttpClient(),
-        provideHttpClientTesting(),
-      ],
+      providers: [ExperienceService, provideHttpClient(), provideHttpClientTesting()],
     });
 
     service = TestBed.inject(ExperienceService);
