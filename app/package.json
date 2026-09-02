@@ -5,12 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:deploy": "ng build --configuration production --base-href /portfolio-website/ && node tools/create-spa-fallback.mjs dist/app/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --watch=false",
+    "test:tools": "node --test tools/*.test.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run format:check && npm run test:ci && npm run build"
+    "check": "npm run format:check && npm run test:tools && npm run test:ci && npm run build"
   },
   "private": true,
   "packageManager": "npm@9.8.1",

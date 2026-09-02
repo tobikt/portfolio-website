@@ -64,8 +64,26 @@ Die Angular Services unter `app/src/app/core/services/` laden diese JSON-Dateien
 
 Die Seite unterstützt Dark und Light Mode. Die Auswahl wird im Browser unter `localStorage` Key `portfolio-theme` gespeichert.
 
+## Deployment
+
+GitHub Pages Deployment ist vorbereitet über:
+
+```text
+.github/workflows/deploy.yml
+```
+
+Lokaler Deployment-Build:
+
+```bash
+cd app
+npm run build:deploy
+```
+
+Details stehen in `docs/deployment.md`.
+
 ## Dokumentation
 
 - `docs/roadmap.md`: Phasen, Epics und Issues
 - `docs/architecture.md`: Architektur und Strukturregeln
 - `docs/design.md`: Design- und Styling-Anforderungen
+- `docs/deployment.md`: Hosting- und CI/CD-Konzept

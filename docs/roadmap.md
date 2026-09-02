@@ -49,7 +49,7 @@ Diese Roadmap beschreibt die Phasen der Entwicklung. Die einzelnen Aufgaben sind
 *Milestone: Phase 5: Deployment*
 *Sprint: Sprint 5*
 
-- [ ] [Build-Prozess optimieren [#13]](https://github.com/tobikt/portfolio-website/issues/13)
-- [ ] [Hosting-Setup [#14]](https://github.com/tobikt/portfolio-website/issues/14)
-- [ ] [GitHub Actions für Deployment [#15]](https://github.com/tobikt/portfolio-website/issues/15)
-- [ ] **[EPIC] Phase 5: Deployment & CI/CD [#20]**(https://github.com/tobikt/portfolio-website/issues/20)
+- [x] [Build-Prozess optimieren [#13]](https://github.com/tobikt/portfolio-website/issues/13)
+- [x] [Hosting-Setup [#14]](https://github.com/tobikt/portfolio-website/issues/14)
+- [x] [GitHub Actions für Deployment [#15]](https://github.com/tobikt/portfolio-website/issues/15)
+- [x] **[EPIC] Phase 5: Deployment & CI/CD [#20]**(https://github.com/tobikt/portfolio-website/issues/20)
