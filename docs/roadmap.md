@@ -6,18 +6,18 @@ Diese Roadmap beschreibt die Phasen der Entwicklung. Die einzelnen Aufgaben sind
 *Milestone: Phase 1: Konzept & Inhaltsstruktur*
 *Sprint: Sprint 1*
 
-- [ ] [Sektionen definieren [#1]](https://github.com/tobikt/portfolio-website/issues/1)
-- [ ] [Content-Typen festlegen [#2]](https://github.com/tobikt/portfolio-website/issues/2)
-- [ ] [Anforderungen an Design und Styling dokumentieren [#3]](https://github.com/tobikt/portfolio-website/issues/3)
-- [ ] **[EPIC] Phase 1: Konzept & Inhaltsstruktur [#16]**(https://github.com/tobikt/portfolio-website/issues/16)
+- [x] [Sektionen definieren [#1]](https://github.com/tobikt/portfolio-website/issues/1)
+- [x] [Content-Typen festlegen [#2]](https://github.com/tobikt/portfolio-website/issues/2)
+- [x] [Anforderungen an Design und Styling dokumentieren [#3]](https://github.com/tobikt/portfolio-website/issues/3)
+- [x] **[EPIC] Phase 1: Konzept & Inhaltsstruktur [#16]**(https://github.com/tobikt/portfolio-website/issues/16)
 
 ## Phase 2: Architektur & Tech-Stack-Setup
 *Milestone: Phase 2: Architektur & Setup*
 
-- [ ] [Projekt initialisieren (Angular CLI) [#4]](https://github.com/tobikt/portfolio-website/issues/4) (Zugeteilt zu: **Sprint 1**)
-- [ ] [Styling-Framework wählen [#5]](https://github.com/tobikt/portfolio-website/issues/5) (Zugeteilt zu: **Sprint 2**)
-- [ ] [Verzeichnisstruktur definieren [#6]](https://github.com/tobikt/portfolio-website/issues/6) (Zugeteilt zu: **Sprint 2**)
-- [ ] **[EPIC] Phase 2: Architektur & Tech-Stack-Setup [#17]**(https://github.com/tobikt/portfolio-website/issues/17)
+- [x] [Projekt initialisieren (Angular CLI) [#4]](https://github.com/tobikt/portfolio-website/issues/4) (Zugeteilt zu: **Sprint 1**)
+- [x] [Styling-Framework wählen [#5]](https://github.com/tobikt/portfolio-website/issues/5) (Zugeteilt zu: **Sprint 2**)
+- [x] [Verzeichnisstruktur definieren [#6]](https://github.com/tobikt/portfolio-website/issues/6) (Zugeteilt zu: **Sprint 2**)
+- [x] **[EPIC] Phase 2: Architektur & Tech-Stack-Setup [#17]**(https://github.com/tobikt/portfolio-website/issues/17)
 
 ## Phase 3: Kern-Entwicklung (MVP)
 *Milestone: Phase 3: MVP Entwicklung*
