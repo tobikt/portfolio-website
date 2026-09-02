@@ -23,10 +23,10 @@ Diese Roadmap beschreibt die Phasen der Entwicklung. Die einzelnen Aufgaben sind
 *Milestone: Phase 3: MVP Entwicklung*
 *Sprint: Sprint 3*
 
-- [ ] [Routing implementieren [#7]](https://github.com/tobikt/portfolio-website/issues/7)
-- [ ] [Basis-Komponenten erstellen [#8]](https://github.com/tobikt/portfolio-website/issues/8)
-- [ ] [Daten-Services aufsetzen [#9]](https://github.com/tobikt/portfolio-website/issues/9)
-- [ ] **[EPIC] Phase 3: Kern-Entwicklung (MVP) [#18]**(https://github.com/tobikt/portfolio-website/issues/18)
+- [x] [Routing implementieren [#7]](https://github.com/tobikt/portfolio-website/issues/7)
+- [x] [Basis-Komponenten erstellen [#8]](https://github.com/tobikt/portfolio-website/issues/8)
+- [x] [Daten-Services aufsetzen [#9]](https://github.com/tobikt/portfolio-website/issues/9)
+- [x] **[EPIC] Phase 3: Kern-Entwicklung (MVP) [#18]**(https://github.com/tobikt/portfolio-website/issues/18)
 
 ## Phase 4: Design, UX & Polishing
 *Milestone: Phase 4: Design & UX*
