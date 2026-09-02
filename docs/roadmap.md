@@ -32,10 +32,10 @@ Diese Roadmap beschreibt die Phasen der Entwicklung. Die einzelnen Aufgaben sind
 *Milestone: Phase 4: Design & UX*
 *Sprint: Sprint 4*
 
-- [ ] [Responsive Design (Mobile First) [#10]](https://github.com/tobikt/portfolio-website/issues/10)
-- [ ] [Animationen implementieren [#11]](https://github.com/tobikt/portfolio-website/issues/11)
-- [ ] [Dark Mode Integration [#12]](https://github.com/tobikt/portfolio-website/issues/12)
-- [ ] **[EPIC] Phase 4: Design, UX & Polishing [#19]**(https://github.com/tobikt/portfolio-website/issues/19)
+- [x] [Responsive Design (Mobile First) [#10]](https://github.com/tobikt/portfolio-website/issues/10)
+- [x] [Animationen implementieren [#11]](https://github.com/tobikt/portfolio-website/issues/11)
+- [x] [Dark Mode Integration [#12]](https://github.com/tobikt/portfolio-website/issues/12)
+- [x] **[EPIC] Phase 4: Design, UX & Polishing [#19]**(https://github.com/tobikt/portfolio-website/issues/19)
 
 ## Phase 5: Deployment & CI/CD
 *Milestone: Phase 5: Deployment*

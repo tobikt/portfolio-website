@@ -22,7 +22,7 @@ import { SiteHeader } from '../../shared/components/site-header/site-header';
     SiteFooter,
   ],
   template: `
-    <div class="min-h-screen bg-[#08090a] text-[#d0d6e0]">
+    <div class="min-h-screen overflow-x-hidden bg-[var(--color-bg)] text-[var(--color-body)] transition-colors duration-200">
       <app-site-header />
       <main>
         <app-hero />

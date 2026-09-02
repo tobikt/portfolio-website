@@ -53,4 +53,15 @@ describe('PortfolioPage', () => {
       '#contact',
     ]);
   });
+
+  it('uses responsive containers and reveal animations for polished sections', () => {
+    const fixture = TestBed.createComponent(PortfolioPage);
+    fixture.detectChanges();
+    const element = fixture.nativeElement as HTMLElement;
+
+    expect(element.querySelector('.overflow-x-hidden')).toBeTruthy();
+    expect(element.querySelector('.sm\\:flex-row')).toBeTruthy();
+    expect(element.querySelector('.lg\\:grid-cols-2')).toBeTruthy();
+    expect(element.querySelector('.reveal')).toBeTruthy();
+  });
 });
