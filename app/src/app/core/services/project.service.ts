@@ -8,6 +8,6 @@ export class ProjectService {
   private readonly http = inject(HttpClient);
 
   getProjects(): Observable<Project[]> {
-    return this.http.get<Project[]>('/data/projects.json');
+    return this.http.get<Project[]>('data/projects.json');
   }
 }

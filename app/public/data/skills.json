@@ -1,32 +1,38 @@
 [
   {
+    "name": "Softwareentwicklung",
+    "category": "Engineering",
+    "level": "Berufserfahrung seit 2022",
+    "icon": "code"
+  },
+  {
     "name": "Angular",
     "category": "Frontend",
-    "level": "Advanced",
+    "level": "Portfolio-Projektstack",
     "icon": "angular"
   },
   {
     "name": "TypeScript",
     "category": "Frontend",
-    "level": "Advanced",
+    "level": "Portfolio-Projektstack",
     "icon": "typescript"
   },
   {
     "name": "Tailwind CSS",
     "category": "Frontend",
-    "level": "Intermediate",
+    "level": "Portfolio-Projektstack",
     "icon": "tailwind"
   },
   {
-    "name": "Testing",
-    "category": "Engineering",
-    "level": "Intermediate",
-    "icon": "test"
+    "name": "Automotive Software",
+    "category": "Domain",
+    "level": "Bertrandt Group / Intive Automotive",
+    "icon": "automotive"
   },
   {
     "name": "GitHub Projects",
     "category": "Arbeitsweise",
-    "level": "Intermediate",
+    "level": "Strukturierte Umsetzung mit Issues und Roadmap",
     "icon": "github"
   }
 ]

@@ -1,13 +1,20 @@
 [
   {
-    "company": "Portfolio Projekt",
-    "role": "Angular Developer",
-    "startDate": "2026-09",
-    "description": "Aufbau einer persönlichen Portfolio-Website mit sauberer Architektur, dokumentierten Entscheidungen und testgestützter Entwicklung.",
+    "company": "Bertrandt Group",
+    "role": "Software-Entwickler",
+    "startDate": "2022-11",
+    "description": "Aktuelle Tätigkeit als Software-Entwickler in Ehningen, Baden-Württemberg.",
     "achievements": [
-      "Angular-Projekt mit Tailwind CSS eingerichtet",
-      "Feature-orientierte Struktur und Datenservices aufgebaut",
-      "GitHub Issues, Milestones und Roadmap synchronisiert"
+      "Softwareentwicklung im Automotive- und Engineering-Umfeld",
+      "Arbeit an modernen, wartbaren Softwarelösungen"
     ]
+  },
+  {
+    "company": "Intive Automotive",
+    "role": "Regular Software Engineer",
+    "startDate": "2022-07",
+    "endDate": "2022-11",
+    "description": "Software Engineering Tätigkeit in Stuttgart.",
+    "achievements": ["Umsetzung von Softwarelösungen im Automotive-Kontext"]
   }
 ]

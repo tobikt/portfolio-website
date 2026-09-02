@@ -8,6 +8,6 @@ export class ExperienceService {
   private readonly http = inject(HttpClient);
 
   getExperience(): Observable<Experience[]> {
-    return this.http.get<Experience[]>('/data/experience.json');
+    return this.http.get<Experience[]>('data/experience.json');
   }
 }

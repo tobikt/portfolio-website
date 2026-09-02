@@ -8,6 +8,6 @@ export class SkillService {
   private readonly http = inject(HttpClient);
 
   getSkills(): Observable<Skill[]> {
-    return this.http.get<Skill[]>('/data/skills.json');
+    return this.http.get<Skill[]>('data/skills.json');
   }
 }

@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
         <p
           class="reveal mb-5 font-mono text-xs uppercase tracking-[0.24em] text-[var(--color-primary-hover)]"
         >
-          Softwareentwicklung · Web · Architektur
+          Tobias Kükelheim · Software-Entwickler · Stuttgart
         </p>
         <h1
           class="reveal reveal-delay-1 max-w-4xl text-4xl font-medium leading-[1.04] tracking-[-0.05em] text-[var(--color-text)] sm:text-6xl lg:text-7xl"

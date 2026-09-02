@@ -36,7 +36,7 @@ describe('ExperienceService', () => {
       expect(result).toEqual(experience);
     });
 
-    const request = http.expectOne('/data/experience.json');
+    const request = http.expectOne('data/experience.json');
     expect(request.request.method).toBe('GET');
     request.flush(experience);
   });
