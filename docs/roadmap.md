@@ -1,26 +1,47 @@
 # Projekt-Roadmap: Persönliche Portfolio Website
 
+Diese Roadmap beschreibt die Phasen der Entwicklung. Die einzelnen Aufgaben sind direkt mit den entsprechenden GitHub Issues verknüpft, um den Fortschritt im Project Board zu verfolgen.
+
 ## Phase 1: Konzept & Inhaltsstruktur (Requirements)
-- [ ] Sektionen definieren
-- [ ] Content-Typen festlegen (Statisch vs. Dynamisch)
-- [ ] Anforderungen an Design und Styling dokumentieren
+*Milestone: Phase 1: Konzept & Inhaltsstruktur*
+*Sprint: Sprint 1*
+
+- [ ] [Sektionen definieren [#1]](https://github.com/tobikt/portfolio-website/issues/1)
+- [ ] [Content-Typen festlegen [#2]](https://github.com/tobikt/portfolio-website/issues/2)
+- [ ] [Anforderungen an Design und Styling dokumentieren [#3]](https://github.com/tobikt/portfolio-website/issues/3)
+- [ ] **[EPIC] Phase 1: Konzept & Inhaltsstruktur [#16]**(https://github.com/tobikt/portfolio-website/issues/16)
 
 ## Phase 2: Architektur & Tech-Stack-Setup
-- [ ] Projekt initialisieren (Angular CLI)
-- [ ] Styling-Framework wählen (Tailwind/SCSS)
-- [ ] Verzeichnisstruktur definieren
+*Milestone: Phase 2: Architektur & Setup*
+
+- [ ] [Projekt initialisieren (Angular CLI) [#4]](https://github.com/tobikt/portfolio-website/issues/4) (Zugeteilt zu: **Sprint 1**)
+- [ ] [Styling-Framework wählen [#5]](https://github.com/tobikt/portfolio-website/issues/5) (Zugeteilt zu: **Sprint 2**)
+- [ ] [Verzeichnisstruktur definieren [#6]](https://github.com/tobikt/portfolio-website/issues/6) (Zugeteilt zu: **Sprint 2**)
+- [ ] **[EPIC] Phase 2: Architektur & Tech-Stack-Setup [#17]**(https://github.com/tobikt/portfolio-website/issues/17)
 
 ## Phase 3: Kern-Entwicklung (MVP)
-- [ ] Routing implementieren
-- [ ] Basis-Komponenten (Navbar, Footer, Hero) erstellen
-- [ ] Daten-Services für Skills und Projekte aufsetzen
+*Milestone: Phase 3: MVP Entwicklung*
+*Sprint: Sprint 3*
+
+- [ ] [Routing implementieren [#7]](https://github.com/tobikt/portfolio-website/issues/7)
+- [ ] [Basis-Komponenten erstellen [#8]](https://github.com/tobikt/portfolio-website/issues/8)
+- [ ] [Daten-Services aufsetzen [#9]](https://github.com/tobikt/portfolio-website/issues/9)
+- [ ] **[EPIC] Phase 3: Kern-Entwicklung (MVP) [#18]**(https://github.com/tobikt/portfolio-website/issues/18)
 
 ## Phase 4: Design, UX & Polishing
-- [ ] Responsive Design (Mobile First)
-- [ ] Animationen implementieren
-- [ ] Dark Mode Integration
+*Milestone: Phase 4: Design & UX*
+*Sprint: Sprint 4*
+
+- [ ] [Responsive Design (Mobile First) [#10]](https://github.com/tobikt/portfolio-website/issues/10)
+- [ ] [Animationen implementieren [#11]](https://github.com/tobikt/portfolio-website/issues/11)
+- [ ] [Dark Mode Integration [#12]](https://github.com/tobikt/portfolio-website/issues/12)
+- [ ] **[EPIC] Phase 4: Design, UX & Polishing [#19]**(https://github.com/tobikt/portfolio-website/issues/19)
 
 ## Phase 5: Deployment & CI/CD
-- [ ] Build-Prozess optimieren
-- [ ] Hosting-Setup (GitHub Pages/Vercel/etc.)
-- [ ] GitHub Actions für automatisches Deployment
+*Milestone: Phase 5: Deployment*
+*Sprint: Sprint 5*
+
+- [ ] [Build-Prozess optimieren [#13]](https://github.com/tobikt/portfolio-website/issues/13)
+- [ ] [Hosting-Setup [#14]](https://github.com/tobikt/portfolio-website/issues/14)
+- [ ] [GitHub Actions für Deployment [#15]](https://github.com/tobikt/portfolio-website/issues/15)
+- [ ] **[EPIC] Phase 5: Deployment & CI/CD [#20]**(https://github.com/tobikt/portfolio-website/issues/20)
