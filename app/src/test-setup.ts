@@ -1,0 +1,9 @@
+import { TestBed } from '@angular/core/testing';
+import { beforeEach } from 'vitest';
+
+beforeEach(() => {
+  TestBed.resetTestingModule();
+  localStorage.clear();
+  document.documentElement.removeAttribute('data-theme');
+  document.documentElement.lang = 'de';
+});
