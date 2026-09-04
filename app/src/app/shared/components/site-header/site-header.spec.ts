@@ -22,23 +22,30 @@ describe('SiteHeader', () => {
     fixture.detectChanges();
   });
 
-  it('renders compact dropdowns for language and theme selection', () => {
+  it('renders language next to the title and keeps contact as the rightmost action', () => {
     const languageSelect = fixture.nativeElement.querySelector(
       '[data-testid="language-select"]',
     ) as HTMLSelectElement;
     const themeSelect = fixture.nativeElement.querySelector(
       '[data-testid="theme-select"]',
     ) as HTMLSelectElement;
+    const header = fixture.nativeElement.querySelector('header') as HTMLElement;
 
     expect(languageSelect).toBeTruthy();
     expect(languageSelect.value).toBe('de');
     expect(themeSelect).toBeTruthy();
     expect(themeSelect.value).toBe('dark');
+    expect(themeSelect.options[0].textContent?.trim()).toBe('☾');
+    expect(themeSelect.options[1].textContent?.trim()).toBe('☀');
+    expect(languageSelect.parentElement?.querySelector('a')?.getAttribute('href')).toBe('#hero');
+    expect(themeSelect.textContent).not.toContain('Hell');
+    expect(themeSelect.textContent).not.toContain('Dunkel');
+    expect(header.textContent?.replace(/\s+/g, ' ').trim().endsWith('Kontakt')).toBe(true);
     expect(fixture.nativeElement.querySelector('[data-testid="language-toggle"]')).toBeNull();
     expect(fixture.nativeElement.querySelector('[data-testid="theme-toggle"]')).toBeNull();
   });
 
-  it('changes the theme from the header dropdown', () => {
+  it('changes the theme from the icon dropdown', () => {
     const select = fixture.nativeElement.querySelector(
       '[data-testid="theme-select"]',
     ) as HTMLSelectElement;
@@ -51,7 +58,7 @@ describe('SiteHeader', () => {
     expect(document.documentElement.dataset['theme']).toBe('light');
   });
 
-  it('changes the language from the header dropdown', () => {
+  it('changes the language from the title-adjacent dropdown', () => {
     const select = fixture.nativeElement.querySelector(
       '[data-testid="language-select"]',
     ) as HTMLSelectElement;

@@ -52,11 +52,11 @@ describe('PortfolioPage', () => {
     const fixture = TestBed.createComponent(PortfolioPage);
     fixture.detectChanges();
     const element = fixture.nativeElement as HTMLElement;
-    const targets = Array.from(element.querySelectorAll('header nav a')).map((link) =>
+    const targets = Array.from(element.querySelectorAll('header a')).map((link) =>
       link.getAttribute('href'),
     );
 
-    expect(targets).toEqual(['#about', '#skills', '#projects', '#experience', '#contact']);
+    expect(targets).toEqual(['#hero', '#about', '#skills', '#projects', '#experience', '#contact']);
   });
 
   it('uses responsive containers and reveal animations for polished sections', () => {
