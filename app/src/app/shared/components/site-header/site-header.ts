@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { Language, LanguageService } from '../../../core/services/language.service';
-import { Theme, ThemeService } from '../../../core/services/theme.service';
+import { LanguageService } from '../../../core/services/language.service';
+import { ThemeService } from '../../../core/services/theme.service';
 
 @Component({
   selector: 'app-site-header',
@@ -18,20 +18,15 @@ import { Theme, ThemeService } from '../../../core/services/theme.service';
           >
             Tobias Kükelheim<span class="text-[var(--color-accent)]">.</span>
           </a>
-          <label class="sr-only" for="language-select">{{
-            languageService.t('languageLabel')
-          }}</label>
-          <select
-            id="language-select"
-            data-testid="language-select"
-            class="cursor-pointer appearance-none border-b border-transparent bg-transparent px-1 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-muted)] outline-none transition hover:border-[var(--color-accent)] hover:text-[var(--color-text)] focus-visible:border-[var(--color-accent)] focus-visible:text-[var(--color-text)]"
-            [value]="languageService.language()"
-            [attr.aria-label]="languageService.t('languageLabel')"
-            (change)="setLanguage($event)"
+          <button
+            type="button"
+            data-testid="language-toggle"
+            class="border-b border-transparent px-1 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-muted)] transition hover:border-[var(--color-accent)] hover:text-[var(--color-text)] focus-visible:border-[var(--color-accent)] focus-visible:text-[var(--color-text)] focus-visible:outline-none"
+            [attr.aria-label]="languageService.t('languageSwitchLabel')"
+            (click)="languageService.toggleLanguage()"
           >
-            <option value="de">DE</option>
-            <option value="en">EN</option>
-          </select>
+            {{ languageService.language() === 'de' ? 'EN' : 'DE' }}
+          </button>
         </div>
 
         <nav
@@ -53,18 +48,19 @@ import { Theme, ThemeService } from '../../../core/services/theme.service';
         </nav>
 
         <div class="flex shrink-0 items-center gap-3">
-          <label class="sr-only" for="theme-select">Farbschema</label>
-          <select
-            id="theme-select"
-            data-testid="theme-select"
-            class="h-9 w-9 cursor-pointer appearance-none border border-[var(--color-border)] bg-[var(--color-surface)] text-center text-base text-[var(--color-text)] outline-none transition hover:-translate-y-0.5 hover:border-[var(--color-accent)] hover:bg-[var(--color-surface-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
-            [value]="themeService.theme()"
-            aria-label="Farbschema"
-            (change)="setTheme($event)"
+          <button
+            type="button"
+            data-testid="theme-toggle"
+            class="grid h-9 w-9 place-items-center border border-[var(--color-border)] bg-[var(--color-surface)] text-base text-[var(--color-text)] transition hover:-translate-y-0.5 hover:border-[var(--color-accent)] hover:bg-[var(--color-surface-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
+            [attr.aria-label]="
+              themeService.theme() === 'dark'
+                ? 'Zum hellen Modus wechseln'
+                : 'Zum dunklen Modus wechseln'
+            "
+            (click)="themeService.toggleTheme()"
           >
-            <option value="dark">☾</option>
-            <option value="light">☀</option>
-          </select>
+            <span aria-hidden="true">{{ themeService.theme() === 'dark' ? '☀' : '☾' }}</span>
+          </button>
           <a
             class="bg-[var(--color-primary)] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-[var(--color-primary-hover)] sm:text-sm"
             href="#contact"
@@ -78,14 +74,4 @@ import { Theme, ThemeService } from '../../../core/services/theme.service';
 export class SiteHeader {
   protected readonly languageService = inject(LanguageService);
   protected readonly themeService = inject(ThemeService);
-
-  protected setLanguage(event: Event): void {
-    const language = (event.target as HTMLSelectElement).value as Language;
-    this.languageService.setLanguage(language);
-  }
-
-  protected setTheme(event: Event): void {
-    const theme = (event.target as HTMLSelectElement).value as Theme;
-    this.themeService.setTheme(theme);
-  }
 }

@@ -22,52 +22,47 @@ describe('SiteHeader', () => {
     fixture.detectChanges();
   });
 
-  it('renders language next to the title and keeps contact as the rightmost action', () => {
-    const languageSelect = fixture.nativeElement.querySelector(
-      '[data-testid="language-select"]',
-    ) as HTMLSelectElement;
-    const themeSelect = fixture.nativeElement.querySelector(
-      '[data-testid="theme-select"]',
-    ) as HTMLSelectElement;
+  it('renders one-line header controls with language next to the title and contact last', () => {
+    const languageToggle = fixture.nativeElement.querySelector(
+      '[data-testid="language-toggle"]',
+    ) as HTMLButtonElement;
+    const themeToggle = fixture.nativeElement.querySelector(
+      '[data-testid="theme-toggle"]',
+    ) as HTMLButtonElement;
     const header = fixture.nativeElement.querySelector('header') as HTMLElement;
 
-    expect(languageSelect).toBeTruthy();
-    expect(languageSelect.value).toBe('de');
-    expect(themeSelect).toBeTruthy();
-    expect(themeSelect.value).toBe('dark');
-    expect(themeSelect.options[0].textContent?.trim()).toBe('☾');
-    expect(themeSelect.options[1].textContent?.trim()).toBe('☀');
-    expect(languageSelect.parentElement?.querySelector('a')?.getAttribute('href')).toBe('#hero');
-    expect(themeSelect.textContent).not.toContain('Hell');
-    expect(themeSelect.textContent).not.toContain('Dunkel');
+    expect(languageToggle).toBeTruthy();
+    expect(languageToggle.textContent?.trim()).toBe('EN');
+    expect(languageToggle.parentElement?.querySelector('a')?.getAttribute('href')).toBe('#hero');
+    expect(themeToggle).toBeTruthy();
+    expect(themeToggle.textContent?.trim()).toBe('☀');
     expect(header.textContent?.replace(/\s+/g, ' ').trim().endsWith('Kontakt')).toBe(true);
-    expect(fixture.nativeElement.querySelector('[data-testid="language-toggle"]')).toBeNull();
-    expect(fixture.nativeElement.querySelector('[data-testid="theme-toggle"]')).toBeNull();
+    expect(fixture.nativeElement.querySelector('[data-testid="language-select"]')).toBeNull();
+    expect(fixture.nativeElement.querySelector('[data-testid="theme-select"]')).toBeNull();
   });
 
-  it('changes the theme from the icon dropdown', () => {
-    const select = fixture.nativeElement.querySelector(
-      '[data-testid="theme-select"]',
-    ) as HTMLSelectElement;
+  it('toggles the theme from the icon button', () => {
+    const button = fixture.nativeElement.querySelector(
+      '[data-testid="theme-toggle"]',
+    ) as HTMLButtonElement;
 
-    select.value = 'light';
-    select.dispatchEvent(new Event('change'));
+    button.click();
     fixture.detectChanges();
 
     expect(themeService.theme()).toBe('light');
     expect(document.documentElement.dataset['theme']).toBe('light');
+    expect(button.textContent?.trim()).toBe('☾');
   });
 
-  it('changes the language from the title-adjacent dropdown', () => {
-    const select = fixture.nativeElement.querySelector(
-      '[data-testid="language-select"]',
-    ) as HTMLSelectElement;
+  it('toggles the language from the title-adjacent text control', () => {
+    const button = fixture.nativeElement.querySelector(
+      '[data-testid="language-toggle"]',
+    ) as HTMLButtonElement;
 
-    select.value = 'en';
-    select.dispatchEvent(new Event('change'));
+    button.click();
     fixture.detectChanges();
 
     expect(languageService.language()).toBe('en');
-    expect(select.value).toBe('en');
+    expect(button.textContent?.trim()).toBe('DE');
   });
 });
