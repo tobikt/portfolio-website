@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { LanguageService } from '../../../core/services/language.service';
-import { ThemeService } from '../../../core/services/theme.service';
+import { Language, LanguageService } from '../../../core/services/language.service';
+import { Theme, ThemeService } from '../../../core/services/theme.service';
 
 @Component({
   selector: 'app-site-header',
@@ -42,32 +42,35 @@ import { ThemeService } from '../../../core/services/theme.service';
               >{{ languageService.t('navContact') }}</a
             >
           </nav>
-          <button
-            type="button"
-            data-testid="language-toggle"
-            class="border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-xs font-semibold text-[var(--color-text)] transition hover:-translate-y-0.5 hover:bg-[var(--color-surface-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
-            [attr.aria-label]="languageService.t('languageSwitchLabel')"
-            (click)="languageService.toggleLanguage()"
-          >
-            {{ languageService.language() === 'de' ? 'ENG' : 'DE' }}
-          </button>
-          <button
-            type="button"
-            data-testid="theme-toggle"
-            class="border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-xs font-semibold text-[var(--color-text)] transition hover:-translate-y-0.5 hover:bg-[var(--color-surface-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
-            [attr.aria-label]="
-              themeService.theme() === 'dark'
-                ? 'Zum hellen Modus wechseln'
-                : 'Zum dunklen Modus wechseln'
-            "
-            (click)="themeService.toggleTheme()"
-          >
-            {{
-              themeService.theme() === 'dark'
-                ? languageService.t('themeLight')
-                : languageService.t('themeDark')
-            }}
-          </button>
+          <div class="flex items-center gap-2 text-xs text-[var(--color-muted)]">
+            <label class="sr-only" for="language-select">{{
+              languageService.t('languageLabel')
+            }}</label>
+            <select
+              id="language-select"
+              data-testid="language-select"
+              class="appearance-none border-0 bg-transparent px-1 py-1 font-semibold text-[var(--color-text)] outline-none transition-colors hover:text-[var(--color-accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
+              [value]="languageService.language()"
+              [attr.aria-label]="languageService.t('languageLabel')"
+              (change)="setLanguage($event)"
+            >
+              <option value="de">DE</option>
+              <option value="en">EN</option>
+            </select>
+            <span aria-hidden="true" class="text-[var(--color-border)]">/</span>
+            <label class="sr-only" for="theme-select">Theme</label>
+            <select
+              id="theme-select"
+              data-testid="theme-select"
+              class="appearance-none border-0 bg-transparent px-1 py-1 font-semibold text-[var(--color-text)] outline-none transition-colors hover:text-[var(--color-accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
+              [value]="themeService.theme()"
+              aria-label="Farbschema"
+              (change)="setTheme($event)"
+            >
+              <option value="dark">Dunkel</option>
+              <option value="light">Hell</option>
+            </select>
+          </div>
         </div>
       </div>
     </header>
@@ -76,4 +79,14 @@ import { ThemeService } from '../../../core/services/theme.service';
 export class SiteHeader {
   protected readonly languageService = inject(LanguageService);
   protected readonly themeService = inject(ThemeService);
+
+  protected setLanguage(event: Event): void {
+    const language = (event.target as HTMLSelectElement).value as Language;
+    this.languageService.setLanguage(language);
+  }
+
+  protected setTheme(event: Event): void {
+    const theme = (event.target as HTMLSelectElement).value as Theme;
+    this.themeService.setTheme(theme);
+  }
 }

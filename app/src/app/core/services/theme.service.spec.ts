@@ -14,6 +14,16 @@ describe('ThemeService', () => {
     expect(document.documentElement.dataset['theme']).toBe('dark');
   });
 
+  it('sets a specific theme and stores the preference', () => {
+    const service = TestBed.inject(ThemeService);
+
+    service.setTheme('light');
+
+    expect(service.theme()).toBe('light');
+    expect(document.documentElement.dataset['theme']).toBe('light');
+    expect(localStorage.getItem('portfolio-theme')).toBe('light');
+  });
+
   it('toggles between dark and light theme and stores the preference', () => {
     const service = TestBed.inject(ThemeService);
 

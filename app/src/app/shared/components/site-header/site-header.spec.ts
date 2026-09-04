@@ -22,38 +22,45 @@ describe('SiteHeader', () => {
     fixture.detectChanges();
   });
 
-  it('renders a theme toggle with the current theme label', () => {
-    const button = fixture.nativeElement.querySelector(
-      '[data-testid="theme-toggle"]',
-    ) as HTMLButtonElement;
+  it('renders compact dropdowns for language and theme selection', () => {
+    const languageSelect = fixture.nativeElement.querySelector(
+      '[data-testid="language-select"]',
+    ) as HTMLSelectElement;
+    const themeSelect = fixture.nativeElement.querySelector(
+      '[data-testid="theme-select"]',
+    ) as HTMLSelectElement;
 
-    expect(button).toBeTruthy();
-    expect(button.getAttribute('aria-label')).toBe('Zum hellen Modus wechseln');
+    expect(languageSelect).toBeTruthy();
+    expect(languageSelect.value).toBe('de');
+    expect(themeSelect).toBeTruthy();
+    expect(themeSelect.value).toBe('dark');
+    expect(fixture.nativeElement.querySelector('[data-testid="language-toggle"]')).toBeNull();
+    expect(fixture.nativeElement.querySelector('[data-testid="theme-toggle"]')).toBeNull();
   });
 
-  it('toggles the theme from the header', () => {
-    const button = fixture.nativeElement.querySelector(
-      '[data-testid="theme-toggle"]',
-    ) as HTMLButtonElement;
+  it('changes the theme from the header dropdown', () => {
+    const select = fixture.nativeElement.querySelector(
+      '[data-testid="theme-select"]',
+    ) as HTMLSelectElement;
 
-    button.click();
+    select.value = 'light';
+    select.dispatchEvent(new Event('change'));
     fixture.detectChanges();
 
     expect(themeService.theme()).toBe('light');
-    expect(button.getAttribute('aria-label')).toBe('Zum dunklen Modus wechseln');
+    expect(document.documentElement.dataset['theme']).toBe('light');
   });
 
-  it('toggles the language from the header', () => {
-    const button = fixture.nativeElement.querySelector(
-      '[data-testid="language-toggle"]',
-    ) as HTMLButtonElement;
+  it('changes the language from the header dropdown', () => {
+    const select = fixture.nativeElement.querySelector(
+      '[data-testid="language-select"]',
+    ) as HTMLSelectElement;
 
-    expect(button.textContent?.trim()).toBe('ENG');
-
-    button.click();
+    select.value = 'en';
+    select.dispatchEvent(new Event('change'));
     fixture.detectChanges();
 
     expect(languageService.language()).toBe('en');
-    expect(button.textContent?.trim()).toBe('DE');
+    expect(select.value).toBe('en');
   });
 });

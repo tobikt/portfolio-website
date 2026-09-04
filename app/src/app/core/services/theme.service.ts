@@ -13,11 +13,15 @@ export class ThemeService {
     this.applyTheme(this.currentTheme());
   }
 
+  setTheme(theme: Theme): void {
+    this.currentTheme.set(theme);
+    localStorage.setItem(STORAGE_KEY, theme);
+    this.applyTheme(theme);
+  }
+
   toggleTheme(): void {
     const nextTheme: Theme = this.currentTheme() === 'dark' ? 'light' : 'dark';
-    this.currentTheme.set(nextTheme);
-    localStorage.setItem(STORAGE_KEY, nextTheme);
-    this.applyTheme(nextTheme);
+    this.setTheme(nextTheme);
   }
 
   private getStoredTheme(): Theme {
