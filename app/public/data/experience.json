@@ -1,12 +1,25 @@
 [
   {
     "company": "Bertrandt Group",
-    "role": "Software-Entwickler",
-    "startDate": "2022-11",
-    "description": "Aktuelle Tätigkeit als Software-Entwickler in Ehningen, Baden-Württemberg.",
+    "role": "Cloud Software Architect",
+    "startDate": "2026-01",
+    "description": "Cloud-Architektur und Softwareentwicklung im AWS-Umfeld mit Fokus auf wartbare Plattformen, klare Verantwortlichkeiten und automatisierbare Infrastruktur.",
     "achievements": [
-      "Softwareentwicklung im Automotive- und Engineering-Umfeld",
-      "Arbeit an modernen, wartbaren Softwarelösungen"
+      "Konzeption und Weiterentwicklung von Cloud-Infrastruktur und cloudnahen Anwendungskomponenten",
+      "Arbeit mit AWS-Services, Infrastructure as Code und nachvollziehbaren Architekturentscheidungen",
+      "Verbindung von Softwareentwicklung, Betrieb und Dokumentation für teamfähige Lösungen"
+    ]
+  },
+  {
+    "company": "Bertrandt Group",
+    "role": "Regular Software Engineer",
+    "startDate": "2022-11",
+    "endDate": "2025-12",
+    "description": "Softwareentwicklung im Automotive- und Engineering-Umfeld mit wachsendem Schwerpunkt auf Cloud, Tooling und nachhaltiger technischer Struktur.",
+    "achievements": [
+      "Entwicklung wartbarer Softwarelösungen für technische und automotive-nahe Anforderungen",
+      "Aufbau von Automatisierung, Dokumentation und klaren Abläufen im Projektkontext",
+      "Zusammenarbeit mit Fachbereichen, Requirements und Entwicklungsteams"
     ]
   },
   {
@@ -14,7 +27,32 @@
     "role": "Regular Software Engineer",
     "startDate": "2022-07",
     "endDate": "2022-11",
-    "description": "Software Engineering Tätigkeit in Stuttgart.",
-    "achievements": ["Umsetzung von Softwarelösungen im Automotive-Kontext"]
+    "description": "Software Engineering im Automotive-Umfeld mit Fokus auf Umsetzung, Qualitätssicherung und Integration in bestehende Entwicklungsprozesse.",
+    "achievements": [
+      "Umsetzung und Pflege von Softwarelösungen im Automotive-Kontext",
+      "Arbeit mit etablierten Toolchains, Requirements und Testprozessen"
+    ]
+  },
+  {
+    "company": "Intive Automotive",
+    "role": "Junior Software Engineer",
+    "startDate": "2021-11",
+    "endDate": "2022-07",
+    "description": "Einstieg in professionelle Automotive-Softwareentwicklung mit Schwerpunkt auf sauberer Umsetzung, Analyse und teamorientierter Projektarbeit.",
+    "achievements": [
+      "Mitarbeit an Softwarelösungen für automotive-nahe Systeme",
+      "Praxis mit Entwicklungs-, Dokumentations- und Testwerkzeugen"
+    ]
+  },
+  {
+    "company": "comemso eMobility Services GmbH",
+    "role": "Junior Software Engineer",
+    "startDate": "2021-03",
+    "endDate": "2022-10",
+    "description": "Softwareentwicklung im Umfeld von eMobility-Testsystemen und Ladeanalyse mit technischem Fokus auf CCS- und CHAdeMO-nahe Lösungen.",
+    "achievements": [
+      "Umsetzung von Softwarelösungen für Ladeanalysatoren und Testumgebungen",
+      "Einblick in eMobility-Protokolle, technische Analyse und produktnahe Entwicklung"
+    ]
   }
 ]

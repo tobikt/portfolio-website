@@ -8,11 +8,11 @@ describe('ExperienceSection', () => {
   const entries: Experience[] = [
     {
       company: 'Example Company',
-      role: 'Frontend Developer',
+      role: 'Cloud Software Architect',
       startDate: '2024-01',
       endDate: '2025-06',
-      description: 'Built accessible Angular interfaces.',
-      achievements: ['Improved UX quality'],
+      description: 'Built cloud platform components.',
+      achievements: ['Improved deployment reliability'],
     },
   ];
 
@@ -37,7 +37,7 @@ describe('ExperienceSection', () => {
     const element = fixture.nativeElement as HTMLElement;
 
     expect(element.textContent).toContain('Example Company');
-    expect(element.textContent).toContain('Frontend Developer');
-    expect(element.textContent).toContain('Improved UX quality');
+    expect(element.textContent).toContain('Cloud Software Architect');
+    expect(element.textContent).toContain('Improved deployment reliability');
   });
 });

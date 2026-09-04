@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { ExperienceService } from '../../core/services/experience.service';
+import { ProfileService } from '../../core/services/profile.service';
 import { ProjectService } from '../../core/services/project.service';
 import { SkillService } from '../../core/services/skill.service';
 import { PortfolioPage } from './portfolio-page';
@@ -12,6 +13,12 @@ describe('PortfolioPage', () => {
       providers: [
         { provide: ProjectService, useValue: { getProjects: () => of([]) } },
         { provide: SkillService, useValue: { getSkills: () => of([]) } },
+        {
+          provide: ProfileService,
+          useValue: {
+            getProfile: () => of({ headline: 'Profil', paragraphs: [], bullets: [] }),
+          },
+        },
         { provide: ExperienceService, useValue: { getExperience: () => of([]) } },
       ],
     }).compileComponents();

@@ -7,11 +7,11 @@ import { Projects } from './projects';
 describe('Projects', () => {
   const projects: Project[] = [
     {
-      id: 'data-driven-site',
-      title: 'Data Driven Site',
-      description: 'A portfolio backed by JSON content.',
-      technologies: ['Angular', 'RxJS'],
-      category: 'Web Application',
+      id: 'portfolio-engineering-setup',
+      title: 'Portfolio Engineering Setup',
+      description: 'A portfolio backed by structured content files.',
+      technologies: ['Angular', 'TypeScript'],
+      category: 'Engineering Setup',
       links: [{ label: 'Demo', url: 'https://example.com' }],
     },
   ];
@@ -36,8 +36,8 @@ describe('Projects', () => {
   it('renders projects loaded from the project service', () => {
     const element = fixture.nativeElement as HTMLElement;
 
-    expect(element.textContent).toContain('Data Driven Site');
-    expect(element.textContent).toContain('A portfolio backed by JSON content.');
+    expect(element.textContent).toContain('Portfolio Engineering Setup');
+    expect(element.textContent).toContain('A portfolio backed by structured content files.');
     expect(element.textContent).toContain('Angular');
     expect(element.querySelector('a')?.getAttribute('href')).toBe('https://example.com');
   });

@@ -24,11 +24,11 @@ describe('ProjectService', () => {
   it('loads projects from the public JSON endpoint', () => {
     const projects: Project[] = [
       {
-        id: 'portfolio-website',
-        title: 'Portfolio Website',
-        description: 'Personal portfolio built with Angular.',
-        technologies: ['Angular', 'TypeScript', 'Tailwind CSS'],
-        category: 'Web Application',
+        id: 'portfolio-engineering-setup',
+        title: 'Portfolio Engineering Setup',
+        description: 'Personal portfolio backed by structured content files.',
+        technologies: ['Angular', 'TypeScript', 'GitHub Projects'],
+        category: 'Engineering Setup',
         links: [{ label: 'GitHub', url: 'https://github.com/tobikt/portfolio-website' }],
         featured: true,
       },

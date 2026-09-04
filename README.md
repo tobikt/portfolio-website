@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Persönliche Portfolio-Website auf Basis von Angular, TypeScript und Tailwind CSS.
+Persönliche Portfolio-Website auf Basis von Angular, TypeScript und dateibasierten Inhalten.
 
 ## Projektstruktur
 
@@ -54,11 +54,12 @@ npm run build        # Production Build erstellen
 
 Die dynamischen Portfolio-Inhalte liegen unter `app/public/data/`:
 
+- `profile.md`: Profilbeschreibung in Markdown. Die erste `#`-Überschrift wird als Profil-Headline genutzt, Absätze werden als Beschreibungstext gerendert, `-`-Listen als Stichpunkte.
 - `projects.json`: Projekte und Links
-- `skills.json`: Skills und Kategorien
+- `skills.json`: Skills und Kategorien inklusive LinkedIn-Kenntnissen
 - `experience.json`: Berufliche Stationen und Achievements
 
-Die Angular Services unter `app/src/app/core/services/` laden diese JSON-Dateien und stellen sie den Feature-Komponenten bereit.
+Die Angular Services unter `app/src/app/core/services/` laden diese Dateien und stellen sie den Feature-Komponenten bereit.
 
 ## Theme
 

@@ -23,7 +23,12 @@ describe('SkillService', () => {
 
   it('loads skills from the public JSON endpoint', () => {
     const skills: Skill[] = [
-      { name: 'Angular', category: 'Frontend', level: 'Advanced', icon: 'angular' },
+      {
+        name: 'Angular',
+        category: 'Anwendungsentwicklung',
+        level: 'Projektpraxis',
+        icon: 'angular',
+      },
     ];
 
     service.getSkills().subscribe((result) => {

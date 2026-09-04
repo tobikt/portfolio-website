@@ -6,9 +6,9 @@ import { Skills } from './skills';
 
 describe('Skills', () => {
   const skills: Skill[] = [
-    { name: 'RxJS', category: 'Frontend', level: 'Advanced' },
-    { name: 'GitHub Actions', category: 'Engineering', level: 'Intermediate' },
-    { name: 'Documentation', category: 'Arbeitsweise', level: 'Advanced' },
+    { name: 'AWS', category: 'Cloud & Infrastruktur', level: 'Berufspraxis' },
+    { name: 'Docker', category: 'Cloud & Infrastruktur', level: 'Projektpraxis' },
+    { name: 'CANoe', category: 'Automotive & Embedded', level: 'Toolpraxis' },
   ];
 
   let fixture: ComponentFixture<Skills>;
@@ -31,8 +31,23 @@ describe('Skills', () => {
   it('renders skills loaded from the skill service', () => {
     const element = fixture.nativeElement as HTMLElement;
 
-    expect(element.textContent).toContain('RxJS');
-    expect(element.textContent).toContain('GitHub Actions');
-    expect(element.textContent).toContain('Documentation');
+    expect(element.textContent).toContain('AWS');
+    expect(element.textContent).toContain('Docker');
+    expect(element.textContent).toContain('CANoe');
+  });
+
+  it('groups skills thematically by category', () => {
+    const element = fixture.nativeElement as HTMLElement;
+    const categoryHeadings = Array.from(element.querySelectorAll('section h3')).map((heading) =>
+      heading.textContent?.trim(),
+    );
+
+    expect(categoryHeadings).toEqual(['Cloud & Infrastruktur', 'Automotive & Embedded']);
+  });
+
+  it('does not render the old generic LinkedIn level label', () => {
+    const element = fixture.nativeElement as HTMLElement;
+
+    expect(element.textContent).not.toContain('LinkedIn Kenntnis');
   });
 });

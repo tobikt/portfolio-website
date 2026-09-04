@@ -1,10 +1,10 @@
 [
   {
-    "id": "portfolio-website",
-    "title": "Portfolio Website",
-    "description": "Persönliche Portfolio-Website mit Angular, Tailwind CSS und strukturierter Projektsteuerung über GitHub Issues.",
-    "technologies": ["Angular", "TypeScript", "Tailwind CSS", "GitHub Projects"],
-    "category": "Web Application",
+    "id": "portfolio-engineering-setup",
+    "title": "Portfolio Engineering Setup",
+    "description": "Eigene Portfolio-Codebasis mit Angular, TypeScript, dateibasierten Inhalten und strukturierter Projektsteuerung über GitHub Issues.",
+    "technologies": ["Angular", "TypeScript", "GitHub Projects"],
+    "category": "Engineering Setup",
     "links": [
       {
         "label": "GitHub",

@@ -1,38 +1,278 @@
 [
   {
-    "name": "Softwareentwicklung",
-    "category": "Engineering",
-    "level": "Berufserfahrung seit 2022",
+    "name": "API Design",
+    "category": "Architektur & Engineering",
+    "level": "Klare Contracts, Versionierung und teamübergreifende Schnittstellen",
+    "icon": "api"
+  },
+  {
+    "name": "Clean Code & Refactoring",
+    "category": "Architektur & Engineering",
+    "level": "Codequalität, Vereinfachung und langfristige Wartbarkeit",
     "icon": "code"
   },
   {
-    "name": "Angular",
-    "category": "Frontend",
-    "level": "Portfolio-Projektstack",
-    "icon": "angular"
+    "name": "Microservices",
+    "category": "Architektur & Engineering",
+    "level": "Service-Schnitt, Integration und Betrieb verteilter Systeme",
+    "icon": "services"
   },
   {
-    "name": "TypeScript",
-    "category": "Frontend",
-    "level": "Portfolio-Projektstack",
-    "icon": "typescript"
+    "name": "Software Architecture",
+    "category": "Architektur & Engineering",
+    "level": "Architekturentscheidungen, Schnittstellen und technische Leitplanken",
+    "icon": "architecture"
   },
   {
-    "name": "Tailwind CSS",
-    "category": "Frontend",
-    "level": "Portfolio-Projektstack",
-    "icon": "tailwind"
+    "name": "Softwareentwicklung",
+    "category": "Architektur & Engineering",
+    "level": "Berufspraxis seit 2021, Schwerpunkt wartbare Produktentwicklung",
+    "icon": "code"
+  },
+  {
+    "name": "Technical Leadership",
+    "category": "Architektur & Engineering",
+    "level": "Technische Orientierung, Review-Kultur und Entscheidungsfähigkeit",
+    "icon": "leadership"
+  },
+  {
+    "name": "AWS IAM",
+    "category": "AWS & Cloud Architecture",
+    "level": "Rollen, Policies und least-privilege Zugriffsmodelle",
+    "icon": "security"
+  },
+  {
+    "name": "AWS Lambda",
+    "category": "AWS & Cloud Architecture",
+    "level": "Serverlose Verarbeitung und eventgetriebene Komponenten",
+    "icon": "aws"
+  },
+  {
+    "name": "AWS Well-Architected Framework",
+    "category": "AWS & Cloud Architecture",
+    "level": "Bewertung nach Security, Reliability, Performance, Cost und Operations",
+    "icon": "aws"
+  },
+  {
+    "name": "Amazon CloudWatch",
+    "category": "AWS & Cloud Architecture",
+    "level": "Logs, Metriken, Alarme und operative Transparenz",
+    "icon": "monitoring"
+  },
+  {
+    "name": "Amazon EC2",
+    "category": "AWS & Cloud Architecture",
+    "level": "Compute-Infrastruktur, Instanzbetrieb und Skalierungsgrundlagen",
+    "icon": "aws"
+  },
+  {
+    "name": "Amazon S3",
+    "category": "AWS & Cloud Architecture",
+    "level": "Objektspeicher, statische Assets und Lifecycle-Konzepte",
+    "icon": "storage"
+  },
+  {
+    "name": "Amazon VPC",
+    "category": "AWS & Cloud Architecture",
+    "level": "Netzwerkgrundlagen, Subnetze, Routing und sichere Segmentierung",
+    "icon": "network"
+  },
+  {
+    "name": "Amazon Web Services (AWS)",
+    "category": "AWS & Cloud Architecture",
+    "level": "Cloud-Architektur, Umsetzung und Betrieb im AWS-Ökosystem",
+    "icon": "aws"
+  },
+  {
+    "name": "CDK",
+    "category": "AWS & Cloud Architecture",
+    "level": "Infrastructure as Code mit wiederverwendbaren Konstrukten",
+    "icon": "aws"
+  },
+  {
+    "name": "Cloud-Anwendungen",
+    "category": "Cloud & Plattformen",
+    "level": "Anwendungsentwicklung für cloudnative Betriebsmodelle",
+    "icon": "cloud"
+  },
+  {
+    "name": "Cloud-Computing",
+    "category": "Cloud & Plattformen",
+    "level": "Architektur, Betrieb und Skalierung verteilter Systeme",
+    "icon": "cloud"
+  },
+  {
+    "name": "Cloud-Infrastruktur",
+    "category": "Cloud & Plattformen",
+    "level": "Konzeption, Aufbau und Weiterentwicklung von Cloud-Plattformen",
+    "icon": "cloud"
+  },
+  {
+    "name": "Cloud-Services",
+    "category": "Cloud & Plattformen",
+    "level": "Auswahl und Integration passender Managed Services",
+    "icon": "cloud"
+  },
+  {
+    "name": "Containerization",
+    "category": "Cloud & Plattformen",
+    "level": "Containerisierte Entwicklungs- und Laufzeitumgebungen",
+    "icon": "container"
+  },
+  {
+    "name": "Docker",
+    "category": "Cloud & Plattformen",
+    "level": "Lokale Setups, Build-Umgebungen und reproduzierbare Services",
+    "icon": "docker"
+  },
+  {
+    "name": "IaaS",
+    "category": "Cloud & Plattformen",
+    "level": "Grundlage für Compute-, Netzwerk- und Betriebsarchitekturen",
+    "icon": "cloud"
+  },
+  {
+    "name": "Infrastructure as code (IaC)",
+    "category": "Cloud & Plattformen",
+    "level": "Reproduzierbare Infrastruktur statt manueller Konfiguration",
+    "icon": "iac"
+  },
+  {
+    "name": "Ansible",
+    "category": "DevOps & Automation",
+    "level": "Konfiguration und Automatisierung wiederkehrender Setup-Schritte",
+    "icon": "automation"
+  },
+  {
+    "name": "CI/CD Pipelines",
+    "category": "DevOps & Automation",
+    "level": "Automatisierte Builds, Tests und Deployment-Abläufe",
+    "icon": "ci"
+  },
+  {
+    "name": "Chocolatey",
+    "category": "DevOps & Automation",
+    "level": "Paketmanagement und reproduzierbare Windows-Setups",
+    "icon": "package"
+  },
+  {
+    "name": "Jenkins",
+    "category": "DevOps & Automation",
+    "level": "Build- und Pipeline-Praxis im Teamumfeld",
+    "icon": "ci"
+  },
+  {
+    "name": "Windows PowerShell",
+    "category": "DevOps & Automation",
+    "level": "Automatisierung und Betrieb im Windows-Umfeld",
+    "icon": "terminal"
+  },
+  {
+    "name": "Documentation",
+    "category": "Betrieb & Qualität",
+    "level": "Entscheidungen, Betriebswissen und Onboarding nachvollziehbar machen",
+    "icon": "docs"
+  },
+  {
+    "name": "Monitoring & Observability",
+    "category": "Betrieb & Qualität",
+    "level": "Logs, Metriken und Fehlerbilder als Grundlage für Betriebssicherheit",
+    "icon": "monitoring"
+  },
+  {
+    "name": "Security by Design",
+    "category": "Betrieb & Qualität",
+    "level": "Sichere Defaults, Zugriffskonzepte und bewusste Angriffsflächen",
+    "icon": "security"
+  },
+  {
+    "name": "Testing Strategy",
+    "category": "Betrieb & Qualität",
+    "level": "Unit-, Integration- und Build-Checks passend zum Risiko",
+    "icon": "test"
   },
   {
     "name": "Automotive Software",
-    "category": "Domain",
-    "level": "Bertrandt Group / Intive Automotive",
+    "category": "Automotive & Embedded",
+    "level": "Projektpraxis bei Bertrandt Group und Intive Automotive",
     "icon": "automotive"
   },
   {
+    "name": "CANoe",
+    "category": "Automotive & Embedded",
+    "level": "Analyse- und Testpraxis im Automotive-Kontext",
+    "icon": "automotive"
+  },
+  {
+    "name": "Embedded Software",
+    "category": "Automotive & Embedded",
+    "level": "Softwareentwicklung im hardwarenahen Automotive-Umfeld",
+    "icon": "embedded"
+  },
+  {
+    "name": "IBM Rational DOORS",
+    "category": "Automotive & Embedded",
+    "level": "Requirements Engineering und Nachvollziehbarkeit von Anforderungen",
+    "icon": "requirements"
+  },
+  {
+    "name": "C (Programmiersprache)",
+    "category": "Programmiersprachen & Daten",
+    "level": "Grundlagen für Embedded- und systemnahe Entwicklung",
+    "icon": "c"
+  },
+  {
+    "name": "C#",
+    "category": "Programmiersprachen & Daten",
+    "level": "Anwendungsentwicklung, Tooling und Windows-nahe Lösungen",
+    "icon": "csharp"
+  },
+  {
+    "name": "C++",
+    "category": "Programmiersprachen & Daten",
+    "level": "Grundlagen und Automotive-nahe Entwicklung",
+    "icon": "cpp"
+  },
+  {
+    "name": "Python (Programmiersprache)",
+    "category": "Programmiersprachen & Daten",
+    "level": "Scripting, Tooling, Datenverarbeitung und Automatisierung",
+    "icon": "python"
+  },
+  {
+    "name": "SQL",
+    "category": "Programmiersprachen & Daten",
+    "level": "Relationale Datenmodelle, Abfragen und Analysegrundlagen",
+    "icon": "database"
+  },
+  {
+    "name": "Confluence",
+    "category": "Systeme & Zusammenarbeit",
+    "level": "Technische Dokumentation und Wissensmanagement im Team",
+    "icon": "docs"
+  },
+  {
+    "name": "Englisch",
+    "category": "Systeme & Zusammenarbeit",
+    "level": "Sichere technische Kommunikation in internationalen Kontexten",
+    "icon": "language"
+  },
+  {
     "name": "GitHub Projects",
-    "category": "Arbeitsweise",
-    "level": "Strukturierte Umsetzung mit Issues und Roadmap",
+    "category": "Systeme & Zusammenarbeit",
+    "level": "Issue-Struktur, Roadmap, Backlog und Lieferfähigkeit",
     "icon": "github"
+  },
+  {
+    "name": "JIRA",
+    "category": "Systeme & Zusammenarbeit",
+    "level": "Agile Projektarbeit, Backlogs und Sprint-Kontext",
+    "icon": "jira"
+  },
+  {
+    "name": "Linux",
+    "category": "Systeme & Zusammenarbeit",
+    "level": "Entwicklungs-, Server- und Betriebsumgebung",
+    "icon": "linux"
   }
 ]
