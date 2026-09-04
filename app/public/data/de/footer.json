@@ -1,0 +1,22 @@
+{
+  "madeBy": "Made by Tobias Kükelheim",
+  "version": "v0.1.0",
+  "sourceLabel": "Inhalte aus",
+  "socialLinks": [
+    {
+      "provider": "github",
+      "label": "GitHub",
+      "url": "https://github.com/tobikt"
+    },
+    {
+      "provider": "profile",
+      "label": "Profil",
+      "url": "https://me.xn--kkelheim-65a.de/"
+    },
+    {
+      "provider": "email",
+      "label": "E-Mail",
+      "url": "mailto:hello@example.com"
+    }
+  ]
+}

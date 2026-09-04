@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { ExperienceService } from '../../core/services/experience.service';
+import { FooterService } from '../../core/services/footer.service';
 import { ProfileService } from '../../core/services/profile.service';
 import { ProjectService } from '../../core/services/project.service';
 import { SkillService } from '../../core/services/skill.service';
@@ -20,6 +21,18 @@ describe('PortfolioPage', () => {
           },
         },
         { provide: ExperienceService, useValue: { getExperience: () => of([]) } },
+        {
+          provide: FooterService,
+          useValue: {
+            getFooter: () =>
+              of({
+                madeBy: 'Made by Tobias Kükelheim',
+                version: 'v0.1.0',
+                sourceLabel: 'Source',
+                socialLinks: [],
+              }),
+          },
+        },
       ],
     }).compileComponents();
   });
