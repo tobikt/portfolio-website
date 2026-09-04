@@ -1,0 +1,278 @@
+[
+  {
+    "name": "API Design",
+    "category": "Architecture & Engineering",
+    "level": "Clear contracts, versioning and cross-team interfaces",
+    "icon": "api"
+  },
+  {
+    "name": "Clean Code & Refactoring",
+    "category": "Architecture & Engineering",
+    "level": "Code quality, simplification and long-term maintainability",
+    "icon": "code"
+  },
+  {
+    "name": "Microservices",
+    "category": "Architecture & Engineering",
+    "level": "Service boundaries, integration and operation of distributed systems",
+    "icon": "services"
+  },
+  {
+    "name": "Software Architecture",
+    "category": "Architecture & Engineering",
+    "level": "Architecture decisions, interfaces and technical guardrails",
+    "icon": "architecture"
+  },
+  {
+    "name": "Softwareentwicklung",
+    "category": "Architecture & Engineering",
+    "level": "Professional practice since 2021, focused on maintainable product development",
+    "icon": "code"
+  },
+  {
+    "name": "Technical Leadership",
+    "category": "Architecture & Engineering",
+    "level": "Technical direction, review culture and decision-making",
+    "icon": "leadership"
+  },
+  {
+    "name": "AWS IAM",
+    "category": "AWS & Cloud Architecture",
+    "level": "Roles, policies and least-privilege access models",
+    "icon": "security"
+  },
+  {
+    "name": "AWS Lambda",
+    "category": "AWS & Cloud Architecture",
+    "level": "Serverless processing and event-driven components",
+    "icon": "aws"
+  },
+  {
+    "name": "AWS Well-Architected Framework",
+    "category": "AWS & Cloud Architecture",
+    "level": "Evaluation across security, reliability, performance, cost and operations",
+    "icon": "aws"
+  },
+  {
+    "name": "Amazon CloudWatch",
+    "category": "AWS & Cloud Architecture",
+    "level": "Logs, metrics, alarms and operational transparency",
+    "icon": "monitoring"
+  },
+  {
+    "name": "Amazon EC2",
+    "category": "AWS & Cloud Architecture",
+    "level": "Compute infrastructure, instance operations and scaling fundamentals",
+    "icon": "aws"
+  },
+  {
+    "name": "Amazon S3",
+    "category": "AWS & Cloud Architecture",
+    "level": "Object storage, static assets and lifecycle concepts",
+    "icon": "storage"
+  },
+  {
+    "name": "Amazon VPC",
+    "category": "AWS & Cloud Architecture",
+    "level": "Networking foundations, subnets, routing and secure segmentation",
+    "icon": "network"
+  },
+  {
+    "name": "Amazon Web Services (AWS)",
+    "category": "AWS & Cloud Architecture",
+    "level": "Cloud architecture, implementation and operation in the AWS ecosystem",
+    "icon": "aws"
+  },
+  {
+    "name": "CDK",
+    "category": "AWS & Cloud Architecture",
+    "level": "Infrastructure as Code with reusable constructs",
+    "icon": "aws"
+  },
+  {
+    "name": "Cloud-Anwendungen",
+    "category": "Cloud & Platforms",
+    "level": "Application development for cloud-native operating models",
+    "icon": "cloud"
+  },
+  {
+    "name": "Cloud-Computing",
+    "category": "Cloud & Platforms",
+    "level": "Architecture, operation and scaling of distributed systems",
+    "icon": "cloud"
+  },
+  {
+    "name": "Cloud-Infrastruktur",
+    "category": "Cloud & Platforms",
+    "level": "Design, setup and evolution of cloud platforms",
+    "icon": "cloud"
+  },
+  {
+    "name": "Cloud-Services",
+    "category": "Cloud & Platforms",
+    "level": "Selection and integration of suitable managed services",
+    "icon": "cloud"
+  },
+  {
+    "name": "Containerization",
+    "category": "Cloud & Platforms",
+    "level": "Containerized development and runtime environments",
+    "icon": "container"
+  },
+  {
+    "name": "Docker",
+    "category": "Cloud & Platforms",
+    "level": "Local setups, build environments and reproducible services",
+    "icon": "docker"
+  },
+  {
+    "name": "IaaS",
+    "category": "Cloud & Platforms",
+    "level": "Foundation for compute, network and operational architectures",
+    "icon": "cloud"
+  },
+  {
+    "name": "Infrastructure as code (IaC)",
+    "category": "Cloud & Platforms",
+    "level": "Reproducible infrastructure instead of manual configuration",
+    "icon": "iac"
+  },
+  {
+    "name": "Ansible",
+    "category": "DevOps & Automation",
+    "level": "Configuration and automation of recurring setup steps",
+    "icon": "automation"
+  },
+  {
+    "name": "CI/CD Pipelines",
+    "category": "DevOps & Automation",
+    "level": "Automated builds, tests and deployment flows",
+    "icon": "ci"
+  },
+  {
+    "name": "Chocolatey",
+    "category": "DevOps & Automation",
+    "level": "Package management and reproducible Windows setups",
+    "icon": "package"
+  },
+  {
+    "name": "Jenkins",
+    "category": "DevOps & Automation",
+    "level": "Build and pipeline practice in team environments",
+    "icon": "ci"
+  },
+  {
+    "name": "Windows PowerShell",
+    "category": "DevOps & Automation",
+    "level": "Automation and operations in Windows environments",
+    "icon": "terminal"
+  },
+  {
+    "name": "Documentation",
+    "category": "Operations & Quality",
+    "level": "Making decisions, operational knowledge and onboarding understandable",
+    "icon": "docs"
+  },
+  {
+    "name": "Monitoring & Observability",
+    "category": "Operations & Quality",
+    "level": "Logs, metrics and failure patterns as a basis for operational reliability",
+    "icon": "monitoring"
+  },
+  {
+    "name": "Security by Design",
+    "category": "Operations & Quality",
+    "level": "Secure defaults, access concepts and conscious attack surfaces",
+    "icon": "security"
+  },
+  {
+    "name": "Testing Strategy",
+    "category": "Operations & Quality",
+    "level": "Unit, integration and build checks matched to risk",
+    "icon": "test"
+  },
+  {
+    "name": "Automotive Software",
+    "category": "Automotive & Embedded",
+    "level": "Project practice at Bertrandt Group and Intive Automotive",
+    "icon": "automotive"
+  },
+  {
+    "name": "CANoe",
+    "category": "Automotive & Embedded",
+    "level": "Analysis and testing practice in automotive contexts",
+    "icon": "automotive"
+  },
+  {
+    "name": "Embedded Software",
+    "category": "Automotive & Embedded",
+    "level": "Software development in hardware-adjacent automotive environments",
+    "icon": "embedded"
+  },
+  {
+    "name": "IBM Rational DOORS",
+    "category": "Automotive & Embedded",
+    "level": "Requirements engineering and traceability of requirements",
+    "icon": "requirements"
+  },
+  {
+    "name": "C (Programmiersprache)",
+    "category": "Programming Languages & Data",
+    "level": "Foundations for embedded and systems-oriented development",
+    "icon": "c"
+  },
+  {
+    "name": "C#",
+    "category": "Programming Languages & Data",
+    "level": "Application development, tooling and Windows-adjacent solutions",
+    "icon": "csharp"
+  },
+  {
+    "name": "C++",
+    "category": "Programming Languages & Data",
+    "level": "Foundations and automotive-adjacent development",
+    "icon": "cpp"
+  },
+  {
+    "name": "Python (Programmiersprache)",
+    "category": "Programming Languages & Data",
+    "level": "Scripting, tooling, data processing and automation",
+    "icon": "python"
+  },
+  {
+    "name": "SQL",
+    "category": "Programming Languages & Data",
+    "level": "Relational data models, queries and analysis foundations",
+    "icon": "database"
+  },
+  {
+    "name": "Confluence",
+    "category": "Systems & Collaboration",
+    "level": "Technical documentation and team knowledge management",
+    "icon": "docs"
+  },
+  {
+    "name": "Englisch",
+    "category": "Systems & Collaboration",
+    "level": "Confident technical communication in international contexts",
+    "icon": "language"
+  },
+  {
+    "name": "GitHub Projects",
+    "category": "Systems & Collaboration",
+    "level": "Issue structure, roadmap, backlog and delivery transparency",
+    "icon": "github"
+  },
+  {
+    "name": "JIRA",
+    "category": "Systems & Collaboration",
+    "level": "Agile project work, backlogs and sprint context",
+    "icon": "jira"
+  },
+  {
+    "name": "Linux",
+    "category": "Systems & Collaboration",
+    "level": "Development, server and operations environment",
+    "icon": "linux"
+  }
+]

@@ -27,7 +27,7 @@ describe('ExperienceService', () => {
         company: 'Example Company',
         role: 'Software Developer',
         startDate: '2024-01',
-        description: 'Built web applications.',
+        description: 'Built cloud platform components.',
         achievements: ['Delivered production features'],
       },
     ];
@@ -36,7 +36,7 @@ describe('ExperienceService', () => {
       expect(result).toEqual(experience);
     });
 
-    const request = http.expectOne('data/experience.json');
+    const request = http.expectOne('data/de/experience.json');
     expect(request.request.method).toBe('GET');
     request.flush(experience);
   });

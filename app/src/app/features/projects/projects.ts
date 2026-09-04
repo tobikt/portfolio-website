@@ -1,5 +1,6 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../core/services/language.service';
 import { ProjectService } from '../../core/services/project.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { ProjectService } from '../../core/services/project.service';
     <section id="projects" class="px-4 py-16 sm:px-5 sm:py-24">
       <div class="mx-auto max-w-6xl">
         <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-          03 · Projekte
+          {{ languageService.t('projectsKicker') }}
         </p>
         <div
           class="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between"
@@ -18,7 +19,7 @@ import { ProjectService } from '../../core/services/project.service';
           <h2
             class="text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text)] sm:text-3xl"
           >
-            Was gerade entsteht.
+            {{ languageService.t('projectsTitle') }}
           </h2>
         </div>
         <div class="mt-10 grid gap-4 lg:grid-cols-2">
@@ -61,6 +62,7 @@ import { ProjectService } from '../../core/services/project.service';
   `,
 })
 export class Projects {
+  protected readonly languageService = inject(LanguageService);
   private readonly projectService = inject(ProjectService);
   protected readonly projects$ = this.projectService.getProjects();
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../core/services/language.service';
 
 @Component({
   selector: 'app-hero',
@@ -9,33 +10,34 @@ import { Component } from '@angular/core';
         <p
           class="reveal mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-accent)]"
         >
-          Tobias Kükelheim · Senior Software Engineer / Cloud Architect · Raum Stuttgart
+          {{ languageService.t('heroMeta') }}
         </p>
         <h1
           class="reveal reveal-delay-1 max-w-4xl text-4xl font-semibold leading-[1.04] tracking-[-0.05em] text-[var(--color-text)] sm:text-6xl lg:text-7xl"
         >
-          Software, die man später noch anfassen will.
+          {{ languageService.t('heroTitle') }}
         </h1>
         <p
           class="reveal reveal-delay-2 mt-7 max-w-2xl text-base leading-7 text-[var(--color-muted)] sm:text-lg sm:leading-8"
         >
-          Ich plane und entwickle AWS-nahe Anwendungen, Plattformbausteine und Tools für Cloud-,
-          Engineering- und Automotive-Kontexte — pragmatisch, wartbar und betrieblich denkbar.
+          {{ languageService.t('heroText') }}
         </p>
         <div class="reveal reveal-delay-2 mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a
             class="rounded-md bg-[var(--color-primary)] px-5 py-3 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-primary-hover)]"
             href="#projects"
-            >Arbeiten ansehen</a
+            >{{ languageService.t('heroPrimaryCta') }}</a
           >
           <a
             class="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-3 text-center text-sm font-semibold text-[var(--color-body)] transition hover:-translate-y-0.5 hover:bg-[var(--color-surface-hover)]"
             href="#about"
-            >Profil lesen</a
+            >{{ languageService.t('heroSecondaryCta') }}</a
           >
         </div>
       </div>
     </section>
   `,
 })
-export class Hero {}
+export class Hero {
+  protected readonly languageService = inject(LanguageService);
+}

@@ -1,6 +1,7 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import { map } from 'rxjs';
+import { LanguageService } from '../../core/services/language.service';
 import { SkillService } from '../../core/services/skill.service';
 import { Skill } from '../../models/skill.model';
 
@@ -19,12 +20,12 @@ const COLLAPSED_SKILL_COUNT = 6;
     <section id="skills" class="px-4 py-16 sm:px-5 sm:py-24">
       <div class="mx-auto max-w-6xl">
         <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-          02 · Kenntnisse
+          {{ languageService.t('skillsKicker') }}
         </p>
         <h2
           class="mt-4 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text)] sm:text-3xl"
         >
-          Thematisch geordnet — von Cloud bis Automotive.
+          {{ languageService.t('skillsTitle') }}
         </h2>
         <div class="mt-10 space-y-8">
           @for (group of skillGroups$ | async; track group.category) {
@@ -36,7 +37,7 @@ const COLLAPSED_SKILL_COUNT = 6;
                   {{ group.category }}
                 </h3>
                 <p class="text-xs text-[var(--color-subtle)]">
-                  {{ group.skills.length }} Kenntnisse
+                  {{ group.skills.length }} {{ languageService.t('skillsCount') }}
                 </p>
               </div>
               <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -63,9 +64,9 @@ const COLLAPSED_SKILL_COUNT = 6;
                   (click)="toggleGroup(group.category)"
                 >
                   @if (isExpanded(group.category)) {
-                    Weniger anzeigen
+                    {{ languageService.t('skillsShowLess') }}
                   } @else {
-                    Alle {{ group.skills.length }} anzeigen
+                    {{ languageService.t('skillsShowAll', { count: group.skills.length }) }}
                   }
                 </button>
               }
@@ -78,6 +79,7 @@ const COLLAPSED_SKILL_COUNT = 6;
 })
 export class Skills {
   protected readonly collapsedSkillCount = COLLAPSED_SKILL_COUNT;
+  protected readonly languageService = inject(LanguageService);
   private readonly skillService = inject(SkillService);
   private readonly expandedCategories = signal<ReadonlySet<string>>(new Set<string>());
   protected readonly skillGroups$ = this.skillService

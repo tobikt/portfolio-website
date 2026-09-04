@@ -38,7 +38,7 @@ describe('ProjectService', () => {
       expect(result).toEqual(projects);
     });
 
-    const request = http.expectOne('data/projects.json');
+    const request = http.expectOne('data/de/projects.json');
     expect(request.request.method).toBe('GET');
     request.flush(projects);
   });

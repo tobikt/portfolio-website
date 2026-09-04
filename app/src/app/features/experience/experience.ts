@@ -1,5 +1,6 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../core/services/language.service';
 import { ExperienceService } from '../../core/services/experience.service';
 
 @Component({
@@ -10,12 +11,12 @@ import { ExperienceService } from '../../core/services/experience.service';
     <section id="experience" class="px-4 py-16 sm:px-5 sm:py-24">
       <div class="mx-auto max-w-6xl">
         <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-          04 · Erfahrung
+          {{ languageService.t('experienceKicker') }}
         </p>
         <h2
           class="mt-4 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text)] sm:text-3xl"
         >
-          Stationen und Praxis.
+          {{ languageService.t('experienceTitle') }}
         </h2>
         <div class="mt-10 space-y-8 border-l border-[var(--color-border)] pl-5 sm:pl-7">
           @for (entry of experience$ | async; track entry.company + entry.role) {
@@ -30,7 +31,7 @@ import { ExperienceService } from '../../core/services/experience.service';
                 @if (entry.endDate) {
                   · {{ entry.endDate }}
                 } @else {
-                  · aktuell
+                  · {{ languageService.t('experienceCurrent') }}
                 }
               </p>
               <h3 class="mt-2 text-lg font-semibold text-[var(--color-text)]">{{ entry.role }}</h3>
@@ -49,6 +50,7 @@ import { ExperienceService } from '../../core/services/experience.service';
   `,
 })
 export class ExperienceSection {
+  protected readonly languageService = inject(LanguageService);
   private readonly experienceService = inject(ExperienceService);
   protected readonly experience$ = this.experienceService.getExperience();
 }

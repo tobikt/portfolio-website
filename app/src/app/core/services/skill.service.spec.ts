@@ -35,7 +35,7 @@ describe('SkillService', () => {
       expect(result).toEqual(skills);
     });
 
-    const request = http.expectOne('data/skills.json');
+    const request = http.expectOne('data/de/skills.json');
     expect(request.request.method).toBe('GET');
     request.flush(skills);
   });

@@ -1,16 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { map, Observable, switchMap } from 'rxjs';
+import { LanguageService } from './language.service';
 import { ProfileContent } from '../../models/profile.model';
 
 @Injectable({ providedIn: 'root' })
 export class ProfileService {
   private readonly http = inject(HttpClient);
+  private readonly languageService = inject(LanguageService);
+  private readonly dataPath$ = this.languageService.dataPath$;
 
   getProfile(): Observable<ProfileContent> {
-    return this.http
-      .get('data/profile.md', { responseType: 'text' })
-      .pipe(map((markdown) => this.parseMarkdown(markdown)));
+    return this.dataPath$.pipe(
+      switchMap((dataPath) => this.http.get(`${dataPath}/profile.md`, { responseType: 'text' })),
+      map((markdown) => this.parseMarkdown(markdown)),
+    );
   }
 
   private parseMarkdown(markdown: string): ProfileContent {

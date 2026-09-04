@@ -1,0 +1,58 @@
+[
+  {
+    "company": "Bertrandt Group",
+    "role": "Cloud Software Architect",
+    "startDate": "2026-01",
+    "description": "Cloud architecture and software development in AWS environments, focused on maintainable platforms, clear responsibilities and automatable infrastructure.",
+    "achievements": [
+      "Design and evolution of cloud infrastructure and cloud-adjacent application components",
+      "Work with AWS services, Infrastructure as Code and traceable architecture decisions",
+      "Connecting software development, operations and documentation for team-ready solutions"
+    ]
+  },
+  {
+    "company": "Bertrandt Group",
+    "role": "Regular Software Engineer",
+    "startDate": "2022-11",
+    "endDate": "2025-12",
+    "description": "Software development in automotive and engineering environments with increasing focus on cloud, tooling and sustainable technical structure.",
+    "achievements": [
+      "Development of maintainable software solutions for technical and automotive-adjacent requirements",
+      "Setup of automation, documentation and clear workflows in project contexts",
+      "Collaboration with domain experts, requirements and development teams"
+    ]
+  },
+  {
+    "company": "Intive Automotive",
+    "role": "Regular Software Engineer",
+    "startDate": "2022-07",
+    "endDate": "2022-11",
+    "description": "Software engineering in automotive environments, focused on implementation, quality assurance and integration into existing development processes.",
+    "achievements": [
+      "Implementation and maintenance of software solutions in automotive contexts",
+      "Work with established toolchains, requirements and test processes"
+    ]
+  },
+  {
+    "company": "Intive Automotive",
+    "role": "Junior Software Engineer",
+    "startDate": "2021-11",
+    "endDate": "2022-07",
+    "description": "Entry into professional automotive software development, focused on clean implementation, analysis and team-oriented project work.",
+    "achievements": [
+      "Contribution to software solutions for automotive-adjacent systems",
+      "Practice with development, documentation and testing tools"
+    ]
+  },
+  {
+    "company": "comemso eMobility Services GmbH",
+    "role": "Junior Software Engineer",
+    "startDate": "2021-03",
+    "endDate": "2022-10",
+    "description": "Software development around eMobility test systems and charging analysis, with technical focus on CCS- and CHAdeMO-adjacent solutions.",
+    "achievements": [
+      "Implementation of software solutions for charging analyzers and test environments",
+      "Exposure to eMobility protocols, technical analysis and product-adjacent development"
+    ]
+  }
+]

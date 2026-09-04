@@ -1,0 +1,16 @@
+[
+  {
+    "id": "portfolio-engineering-setup",
+    "title": "Portfolio Engineering Setup",
+    "description": "Personal portfolio codebase with Angular, TypeScript, file-based content and structured project management through GitHub Issues.",
+    "technologies": ["Angular", "TypeScript", "GitHub Projects"],
+    "category": "Engineering Setup",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/tobikt/portfolio-website"
+      }
+    ],
+    "featured": true
+  }
+]

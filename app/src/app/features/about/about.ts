@@ -1,5 +1,6 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../core/services/language.service';
 import { ProfileService } from '../../core/services/profile.service';
 
 @Component({
@@ -13,7 +14,7 @@ import { ProfileService } from '../../core/services/profile.service';
       >
         <div>
           <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-accent)]">
-            01 · Profil
+            {{ languageService.t('aboutKicker') }}
           </p>
           @if (profile$ | async; as profile) {
             <h2
@@ -42,6 +43,7 @@ import { ProfileService } from '../../core/services/profile.service';
   `,
 })
 export class About {
+  protected readonly languageService = inject(LanguageService);
   private readonly profileService = inject(ProfileService);
   protected readonly profile$ = this.profileService.getProfile();
 }

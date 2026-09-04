@@ -52,14 +52,14 @@ npm run build        # Production Build erstellen
 
 ## Inhalte pflegen
 
-Die dynamischen Portfolio-Inhalte liegen unter `app/public/data/`:
+Die dynamischen Portfolio-Inhalte liegen sprachgetrennt unter `app/public/data/de/` und `app/public/data/en/`:
 
 - `profile.md`: Profilbeschreibung in Markdown. Die erste `#`-Überschrift wird als Profil-Headline genutzt, Absätze werden als Beschreibungstext gerendert, `-`-Listen als Stichpunkte.
 - `projects.json`: Projekte und Links
-- `skills.json`: Skills und Kategorien inklusive LinkedIn-Kenntnissen
+- `skills.json`: Skills und Kategorien
 - `experience.json`: Berufliche Stationen und Achievements
 
-Die Angular Services unter `app/src/app/core/services/` laden diese Dateien und stellen sie den Feature-Komponenten bereit.
+Die Angular Services unter `app/src/app/core/services/` laden diese Dateien abhängig von der gewählten Sprache. Die Sprachauswahl wird im Browser unter `localStorage` Key `portfolio-language` gespeichert.
 
 ## Theme
 

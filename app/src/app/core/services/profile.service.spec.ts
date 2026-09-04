@@ -27,7 +27,7 @@ describe('ProfileService', () => {
       expect(profile.bullets).toEqual(['Cloud', 'Automotive']);
     });
 
-    const request = http.expectOne('data/profile.md');
+    const request = http.expectOne('data/de/profile.md');
     expect(request.request.method).toBe('GET');
     request.flush('# Eigener Profiltext\n\nAbsatz eins.\n\nAbsatz zwei.\n\n- Cloud\n- Automotive');
   });

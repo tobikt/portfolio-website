@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../core/services/language.service';
 import { About } from '../about/about';
 import { Contact } from '../contact/contact';
 import { ExperienceSection } from '../experience/experience';
@@ -21,7 +22,7 @@ import { SiteHeader } from '../../shared/components/site-header/site-header';
         class="fixed left-4 top-4 z-[60] -translate-y-20 rounded-md bg-[var(--color-primary)] px-4 py-2 text-sm font-medium text-white transition focus:translate-y-0"
         href="#content"
       >
-        Zum Inhalt springen
+        {{ languageService.t('skipLink') }}
       </a>
       <app-site-header />
       <main id="content">
@@ -36,4 +37,6 @@ import { SiteHeader } from '../../shared/components/site-header/site-header';
     </div>
   `,
 })
-export class PortfolioPage {}
+export class PortfolioPage {
+  protected readonly languageService = inject(LanguageService);
+}
